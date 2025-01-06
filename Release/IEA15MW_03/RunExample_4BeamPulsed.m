@@ -7,8 +7,8 @@
 % In this example, we assume frozen turbulence, only one 3D turbulent
 % wind field (y,z,t) at rotor plane is generated.
 % Result:
-% Change in rotor speed standard deviation:  -49.5 %
-% Cost for Summer Games 2024 ("18 m/s hurdles"):  0.444616 m/s 
+% Change in rotor speed standard deviation:  -42.2 %
+% Cost for Summer Games 2024 ("18 m/s hurdles"):  0.506876 m/s 
 
 %% Setup
 clearvars;close all;clc;
