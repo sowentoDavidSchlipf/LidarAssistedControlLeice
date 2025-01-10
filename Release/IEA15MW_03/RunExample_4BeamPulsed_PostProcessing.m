@@ -1,5 +1,5 @@
 % IEA15MW_03: IEA 15 MW monopile + realistic wind preview from a 
-% 4-beam pulsed lidar system measuring at 160 m.
+% 4-beam pulsed lidar system (LEICE) measuring at 200 m.
 % This script needs to be run after RunExample_4BeamPulsed.m. 
 % Purpose:
 % A postprocessing version without the need to compile DLLs for lidar data
@@ -8,7 +8,7 @@
 % R_FBFF = CalculateREWSfromLidarData_LDP_v1(FBFF,DT,TMax,LDP);
 % with your own function with the same inputs and outputs.
 % Result:
-% Cost for Summer Games 2024 ("18 m/s hurdles"):  0.444616 m/s 
+% Cost for Summer Games 2024 ("18 m/s hurdles"):  0.492529 m/s 
 
 %% Setup
 clearvars;close all;clc;
@@ -29,11 +29,11 @@ tau                 = 2;                        % [s]   time to overcome pitch a
 
 % configuration from LDP_v1_4BeamPulsed.IN and FFP_v1_4BeamPulsed.IN
 LDP.NumberOfBeams       = 4;        % Number of beams measuring at different directions [-]               
-LDP.AngleToCenterline   = 19.176;   % Angle around centerline [deg]
-LDP.IndexGate           = 6;        % IndexGate
+LDP.AngleToCenterline   = 16.623;   % Angle around centerline [deg]
+LDP.IndexGate           = 1;        % IndexGate
 LDP.FlagLPF             = 1;        % Enable low-pass filter (flag) [0/1]
-LDP.f_cutoff            = 0.1232;   % Corner frequency (-3dB) of the low-pass filter [rad/s]
-LDP.T_buffer            = 1.3889;   % Buffer time for filtered REWS signal [s]
+LDP.f_cutoff            = 0.1156;   % Corner frequency (-3dB) of the low-pass filter [rad/s]
+LDP.T_buffer            = 2.0;      % Buffer time for filtered REWS signal [s]
 
 % Files (should not be be changed)
 SimulationFolderLAC = 'SimulationResults_4BeamPulsed';

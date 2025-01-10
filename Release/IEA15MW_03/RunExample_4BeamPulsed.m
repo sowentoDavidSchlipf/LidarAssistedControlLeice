@@ -1,5 +1,5 @@
 % IEA15MW_03: IEA 15 MW monopile + realistic wind preview  from a 
-% 4-beam pulsed lidar system measuring at 160 m. 
+% 4-beam pulsed lidar system (LEICE) measuring at 200 m.
 % Purpose:
 % Here, we use a realistic wind preview to demonstrate that the collective
 % pitch feedforward controller together with the correct filtering provides
@@ -7,8 +7,8 @@
 % In this example, we assume frozen turbulence, only one 3D turbulent
 % wind field (y,z,t) at rotor plane is generated.
 % Result:
-% Change in rotor speed standard deviation:  -42.2 %
-% Cost for Summer Games 2024 ("18 m/s hurdles"):  0.506876 m/s 
+% Change in rotor speed standard deviation:  -40.3 %
+% Cost for Summer Games 2024 ("18 m/s hurdles"):  0.492529 m/s 
 
 %% Setup
 clearvars;close all;clc;
